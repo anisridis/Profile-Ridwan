@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*navbar styling*/
+.navbar-small{
+    display: flex;
+    justify-content: space-between;
+    background-color:gray;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.nav-links{
+    display: flex;
+    padding: 10px;
+}
+
+.nav-links .links li{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav-links .links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    width: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 7px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.nav-links .links li:hover{
+    background-color: blue;
+    border-radius: 8px;
+}
+
+span{
+    color: coral;
+}
+
+.navlinks-mobile{
+display: none;
+}
+
+
+@media(max-width:768px){
+    .links{
+     display: none;
+     flex-direction: column;
+     width: 80%;
+     padding: 10px;
+     z-index: 1;
+     transition: all 0.75 ease-in-out;
+     position: absolute;
+    }
+    .navlinks-mobile{
+     display: block;
+    }
+ }
+ 
+
+ /*hero styling*/
+.hero-container{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.hero-small-container{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+@media (max-width:768px) {
+    .hero-container{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding: auto;
+    }
+
+    .hero-small-container{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+}
+h4, p, button{
+    padding: 20px;
+}
+
+button{
+    width: 150px;
+    border-radius: 8px;
+    border: none;
+    transition: transform .5rem;
+    margin-top: 20px;
+}
+
+.hero:hover{
+    transform: translateY(0.25rem);
+    background-color: blue;
+    color: white;
+
+}
+
+.about{
+    text-align: center;
+    align-items: center;
+    background-color: #efefef;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+
+/*service styling*/
+.container-service{
+    display: flex;
+    margin: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.container-small{
+    width: 30%;
+    background-color: #efefef;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .container-service{
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container-small{
+        width: 80%;
+        background-color: #efefef;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+}
+
+/*project styling*/
+
+.Project-container{
+    display: grid;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.project-small-container{
+         width: 80%;
+        background-color: #efefef;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+
+}
+ h4{
+    text-align: center;
+    color: blue;
+ }
+
+ @media (max-width: 768px) {
+    .Project-container{
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+
+
+    }
+    .project-small-container{
+        width: 100%;
+        background-color: #efefef;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        
+    }
+    
+ }
+
+ .small-container{
+    background-color: blue;
+    padding: 20px;
+    padding-right: 20px;
+    border-bottom: 20px;
+    margin-bottom: 30px;
+    
+    
+ }
+
+ .big-contact{
+    display: inline-block;
+    width: 50%;
+    margin: 10px;
+    padding-bottom: 10px;
+    padding: 100px;
+    
+
+    
+ }
+
+ .small-contact{
+    width: 100px;
+    align-items: center;
+    
+ }
+
+ @media (max-width:768px) {
+    .big-contact{
+        display: block;
+        width: 90%;
+        justify-content: center;
+        
+        
+    }
+
+    .small-contact{
+        width: 100%;
+        background-color: #efefef;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+
+    
+ }
+    
+ footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+ }
+
+
+
+ 
